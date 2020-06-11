@@ -5,7 +5,7 @@
 </template>
 <script>
 import widgets, { Render, Epage } from 'epage-iview'
-import { widgets as customWidgets } from '@'
+import customWidgets from '@'
 import mockSchema from './schema.json'
 
 const { helper } = Epage

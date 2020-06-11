@@ -1,5 +1,11 @@
-import widgets from './widgets'
+export const EchartsLine = require('./widgets/line')
+export const EchartsBar = require('./widgets/bar')
 
-export {
-  widgets
-}
+export default [{
+  title: 'Echarts',
+  key: 'echarts',
+  widgets: [
+    EchartsLine,
+    EchartsBar
+  ]
+}]
