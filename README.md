@@ -52,6 +52,7 @@ new Render({ el, widgets, schema })
 <script src='//cdn.jsdelivr.net/npm/sortablejs@1.8.4/Sortable.min.js' ></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.20.0/vuedraggable.umd.min.js' ></script>
 
+<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
 <script src="./epage.min.js"></script>
 <script src="./epage-iview.min.js"></script>
 <script src="./epage-echarts.min.js"></script>
@@ -60,7 +61,9 @@ new Render({ el, widgets, schema })
 Vue.use(Vuex)
 Vue.use(iview)
 const el = document.getElementById('root')
-const { default: widgets, Render } = EpageIview
+const { default: iviewWidgets, Render } = EpageIview
+const { default: echartsWidgets } = EpageEcharts
+const widgets = Epage.helper.mergeWidgets(echartsWidgets, ...iviewWidgets)
 
 // 设计器
 new Epage({ el, widgets, Render })
