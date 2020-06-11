@@ -10,7 +10,6 @@ output/
 web-ui.tar.gz
 .vscode
 dist-examples/
-dist/
 *.iml
 .idea/
 package-lock.json
