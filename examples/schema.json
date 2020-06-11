@@ -1,0 +1,37 @@
+{
+  "key": "sss",
+  "widget": "grid",
+  "title": "项目",
+  "description": "",
+  "hidden": false,
+  "size": "default",
+  "option": {},
+  "children": [{
+    "span": 24,
+    "list": [{
+      "key": "kTbIYTMwA",
+      "name": "kTbIYTMwA",
+      "widget": "input",
+      "type": "string",
+      "label": "编码",
+      "description": "",
+      "help": "",
+      "hidden": false,
+      "disabled": false,
+      "placeholder": "模糊查询",
+      "size": "default",
+      "rules": [{
+        "required": false,
+        "message": "",
+        "trigger": "blur"
+      }],
+      "option": {}
+    }]
+  }],
+  "logics": [],
+  "label": {
+    "width": 80,
+    "position": "right",
+    "colon": false
+  }
+}
