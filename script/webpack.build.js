@@ -33,12 +33,7 @@ const webpackConfig = merge(webpackBaseConfig, {
       commonjs2: 'vuex',
       amd: 'vuex'
     },
-    echarts: {
-      root: 'Echarts',
-      commonjs: 'echarts',
-      commonjs2: 'echarts',
-      amd: 'echarts'
-    },
+    echarts: 'echarts',
     vuedraggable: 'vuedraggable',
     epage: {
       root: 'Epage',

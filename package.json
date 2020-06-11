@@ -1,6 +1,6 @@
 {
   "name": "epage-echarts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Epage widgets echarts",
   "author": "chengzi <ttghost@126.com>",
   "main": "./dist/epage-echarts.min.js",
