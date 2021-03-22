@@ -41,6 +41,12 @@ const webpackConfig = merge(webpackBaseConfig, {
       commonjs2: 'epage',
       amd: 'epage'
     },
+    'epage-core': {
+      root: 'EpageCore',
+      commonjs: 'epage-core',
+      commonjs2: 'epage-core',
+      amd: 'epage-core'
+    },
     'epage-iview': {
       root: 'EpageIview',
       commonjs: 'epage-iview',

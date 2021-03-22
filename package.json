@@ -1,6 +1,6 @@
 {
   "name": "epage-echarts",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Epage widgets echarts",
   "author": "chengzi <ttghost@126.com>",
   "main": "./dist/epage-echarts.min.js",
@@ -38,21 +38,22 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "iview": "^2.13.0",
+    "vue": "^2.5.16",
+    "vuex": "^3.1",
+    "epage-core": "^0.5.1"
+  },
   "peerDependencies": {
-    "vue": ">2.5",
-    "iview": ">=2.13",
-    "vuedraggable": ">=2.20.0",
-    "vuex": ">=3.1",
     "echarts": ">=4.2",
-    "epage": ">=0.2.7",
-    "epage-iview": ">=0.2.6"
+    "epage": ">=0.7.2",
+    "epage-iview": ">=0.7.1"
   },
   "devDependencies": {
     "husky": "^4.2.3",
     "echarts": "^4.8.0",
-    "epage-iview": "^0.2.6",
-    "iview": "^3.5.4",
+    "epage": "^0.7.2",
+    "epage-iview": "^0.7.1",
     "vuedraggable": "^2.20.0",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -79,10 +80,8 @@
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^1.0.0-rc.0",
     "url-loader": "^1.1.2",
-    "vue": "^2.6.10",
     "vue-loader": "15.7.0",
     "vue-template-compiler": "^2.6.10",
-    "vuex": "^3.1.1",
     "webpack": "^4.35.2",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.5",

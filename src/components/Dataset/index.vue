@@ -21,9 +21,7 @@ div
   slot
 </template>
 <script>
-import { Epage } from 'epage-iview'
-
-const { helper } = Epage
+import { helper, Worker as EpageWorker } from 'epage-core'
 
 export default {
   props: {
@@ -49,7 +47,7 @@ export default {
     }
   },
   mounted () {
-    this.worker = new Epage.Worker()
+    this.worker = new EpageWorker()
     this.listenMessage()
     this.getData()
   },

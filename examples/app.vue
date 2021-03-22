@@ -4,11 +4,12 @@
 
 </template>
 <script>
-import widgets, { Render, Epage } from 'epage-iview'
+import { render, helper } from 'epage-core'
+import Epage from 'epage'
+import widgets, { entry } from 'epage-iview'
 import customWidgets from '@'
 import mockSchema from './schema.json'
 
-const { helper } = Epage
 const myWidgets = helper.mergeWidgets(customWidgets, ...widgets)
 
 export default {
@@ -24,7 +25,11 @@ export default {
     },
     designCharts (schema) {
       const el = this.$refs.form
-      return new Epage({ el, widgets: myWidgets, schema, Render })
+      return new Epage({ el, schema, pc: {
+        widgets: myWidgets,
+        Render: render.VueRender,
+        component: entry
+      }})
     }
   }
 }

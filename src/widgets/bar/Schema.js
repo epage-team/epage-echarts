@@ -1,6 +1,7 @@
-import { Epage } from 'epage-iview'
 
-export default class EchartsBarSchema extends Epage.schema.BaseSchema {
+import { schema } from 'epage-core'
+
+export default class EchartsBarSchema extends schema.BaseSchema {
   constructor (props) {
     super() // super 不传参数时  $init 不会执行
     this.option = {
@@ -52,7 +53,7 @@ export default class EchartsBarSchema extends Epage.schema.BaseSchema {
 Object.assign(EchartsBarSchema, {
   title: '柱状图',
   widget: 'echarts-bar', // 组件类型的唯一标识，相同时表示同一个组件 必须和 this.widget相同
-  icon: 'md-stats',
+  icon: '',
   logic: {
     value: [],
     // event: ['focus', 'blur', 'change']

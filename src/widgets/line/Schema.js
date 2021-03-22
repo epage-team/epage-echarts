@@ -1,6 +1,6 @@
-import { Epage } from 'epage-iview'
+import { schema } from 'epage-core'
 
-export default class EchartsLineSchema extends Epage.schema.BaseSchema {
+export default class EchartsLineSchema extends schema.BaseSchema {
   constructor (props) {
     super() // super 不传参数时  $init 不会执行
     this.option = {
@@ -52,7 +52,7 @@ export default class EchartsLineSchema extends Epage.schema.BaseSchema {
 Object.assign(EchartsLineSchema, {
   title: '折线图',
   widget: 'echarts-line', // 组件类型的唯一标识，相同时表示同一个组件 必须和 this.widget相同
-  icon: 'md-trending-up',
+  preview: '',
   logic: {
     value: [],
     // event: ['focus', 'blur', 'change']

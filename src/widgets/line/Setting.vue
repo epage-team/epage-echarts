@@ -63,7 +63,7 @@ setting-form(:store='store')
 
 </template>
 <script>
-import { Epage } from 'epage-iview'
+import { setting } from 'epage-iview'
 import config, { types } from '../../config'
 import EchartsTitle from './../../components/Title/index.vue'
 import EchartsAxis from './../../components/Axis/index.vue'
@@ -72,7 +72,7 @@ import EchartsTooltip from './../../components/Tooltip/index.vue'
 import EchartsSeries from './../../components/Series/index.vue'
 import EchartsDataset from './../../components/Dataset/index.vue'
 
-const { SettingForm, settingExtend } = Epage.setting
+const { SettingForm, settingExtend } = setting
 
 export default {
   components: {

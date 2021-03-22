@@ -40,9 +40,7 @@ div
   slot
 </template>
 <script>
-import { Epage } from 'epage-iview'
-
-const { helper } = Epage
+import { helper } from 'epage-core'
 
 export default {
   props: {
